@@ -96,12 +96,6 @@ export const ComfortZone = (props) => {
         }
       },
     };
-    console.log("=========================")
-    console.log("1 = ", getWinterOrSummer())
-    console.log("2 = ", !isNaN(temp))
-    console.log("3 = ", !isNaN(humd))
-    console.log("4 = ", (!isNaN(temp) || !isNaN(humd)))
-    console.log("=========================")
     return checkComfort[getWinterOrSummer()](temp, humd);
   }
 
